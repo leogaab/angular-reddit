@@ -24,7 +24,7 @@ export class ArticleComponent implements OnInit {
   }
 
   voteDown() {
-    this.votes !== 0 ? this.votes-- : 0;
+    this.votes--;
   }
 
 }
