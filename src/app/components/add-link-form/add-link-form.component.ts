@@ -13,8 +13,8 @@ export class AddLinkFormComponent implements OnInit {
   }
 
   addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean {
-    console.log('Adding article title: ' + title);
-    console.log('Adding article link: ' + link);
+    console.log('Adding article title: ' + title.value);
+    console.log('Adding article link: ' + link.value);
     return false;
   }
 
