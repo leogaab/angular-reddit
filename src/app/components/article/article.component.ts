@@ -6,18 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./article.component.css']
 })
 export class ArticleComponent implements OnInit {
+  votes: number;
+  title: string;
+  link: string;
 
-  constructor() { }
+  constructor() {
+    this.votes = 10;
+    this.title = 'Angular';
+    this.link = 'angular.io';
+  }
 
   ngOnInit(): void {
   }
 
   voteUp() {
-    console.log('Up btn clicked');
+    this.votes++;
   }
 
   voteDown() {
-    console.log('Down btn clicked');
+    this.votes !== 0 ? this.votes-- : 0;
   }
 
 }

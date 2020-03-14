@@ -18,6 +18,31 @@
   letter-spacing: 2px;
 }
 
+.header {
+  text-decoration: none;
+  color: #1abc9c;
+  transition: 0.2s ease-in-out;
+}
+.header:hover {
+  color: #16a085;
+}
+
 .btn {
   cursor: pointer;
+}
+
+.btn:hover {
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
+}
+
+.link {
+  cursor: pointer;
+  font-weight: bold;
+  color: #7f8c8d;
+}
+
+.link:hover {
+  color: #6f7b7c;
+  transition: 0.2s ease-in-out;
 }

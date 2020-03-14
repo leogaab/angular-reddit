@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-4 text-center votes">
       <div class="value">
-        <h2>3</h2>
+        <h2>{{ votes }}</h2>
       </div>
       <div class="label">
         POINTS
@@ -11,9 +11,9 @@
     <div class="col-8">
       <div class="row flex-column pl-3">
         <a href="" class="header">
-          <h2>Title</h2>
+          <h2>{{ title }}</h2>
         </a>
-        <small>( link )</small><br>
+        <small class="link">({{ link }})</small><br>
       </div>
       <div class="row pl-3">
         <a class="btn mr-3" (click)="voteUp()"><i class="fi-xwluxl-arrow-simple-wide"></i>upvote</a>
