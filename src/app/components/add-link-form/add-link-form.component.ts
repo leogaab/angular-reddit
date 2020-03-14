@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Article } from '../article/article.model';
 
 @Component({
   selector: 'app-add-link-form',
@@ -6,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-link-form.component.css']
 })
 export class AddLinkFormComponent implements OnInit {
+  articles: Article[];
 
-  constructor() { }
+  constructor() {
+    this.articles = [
+      new Article ('Angular', 'http://angular.io', 3),
+      new Article ('Fullstack', 'http://fullstack.io', 2),
+      new Article ('Angular Homepage', 'http://angular.io', 1)
+    ];
+  }
 
   ngOnInit(): void {
   }

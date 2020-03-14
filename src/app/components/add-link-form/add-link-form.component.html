@@ -12,5 +12,5 @@
       <button type="submit" class="btn btn-primary" (click)="addArticle(newTitle, newLink)">Submit link</button>
     </form>
   </div>
-  <app-article></app-article>
+  <app-article *ngFor="let foobar of articles" [article]="foobar" ></app-article>
 </div>
