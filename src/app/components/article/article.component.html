@@ -1,1 +1,24 @@
-<p>article works!</p>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-4 text-center votes">
+      <div class="value">
+        <h2>3</h2>
+      </div>
+      <div class="label">
+        POINTS
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="row flex-column pl-3">
+        <a href="" class="header">
+          <h2>Title</h2>
+        </a>
+        <small>( link )</small><br>
+      </div>
+      <div class="row pl-3">
+        <a class="btn mr-3" (click)="voteUp()"><i class="fi-xwluxl-arrow-simple-wide"></i>upvote</a>
+        <a class="btn" (click)="voteDown()"><i class="fi-xwldxl-arrow-simple-wide"></i>downvote</a>
+      </div>
+    </div>
+  </div>
+</div>

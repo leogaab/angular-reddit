@@ -12,4 +12,12 @@ export class ArticleComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  voteUp() {
+    console.log('Up btn clicked');
+  }
+
+  voteDown() {
+    console.log('Down btn clicked');
+  }
+
 }
