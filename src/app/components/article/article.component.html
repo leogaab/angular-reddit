@@ -13,7 +13,7 @@
         <a href="{{ article.link }}" class="header">
           <h2>{{ article.title }}</h2>
         </a>
-        <!-- <small class="link">({{ article.link }})</small><br> -->
+        <small class="link">({{ article.domain() }})</small><br>
       </div>
       <div class="row pl-3">
         <a class="btn mr-3" (click)="voteUp()"><i class="fi-xwluxl-arrow-simple-wide"></i>upvote</a>
