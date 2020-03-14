@@ -3,13 +3,13 @@
     <form>
       <div class="form-group">
         <label for="title">Title</label>
-        <input type="text" class="form-control" id="title">
+        <input type="text" class="form-control" id="title" #newTitle>
       </div>
       <div class="form-group">
         <label for="link">Link</label>
-        <input type="text" class="form-control" id="link">
+        <input type="text" class="form-control" id="link" #newLink>
       </div>
-      <button type="submit" class="btn btn-primary">Submit link</button>
+      <button type="submit" class="btn btn-primary" (click)="addArticle(newTitle, newLink)">Submit link</button>
     </form>
   </div>
 </div>

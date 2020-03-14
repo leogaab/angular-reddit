@@ -12,4 +12,10 @@ export class AddLinkFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean {
+    console.log('Adding article title: ' + title);
+    console.log('Adding article link: ' + link);
+    return false;
+  }
+
 }
